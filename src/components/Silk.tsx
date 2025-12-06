@@ -10,11 +10,12 @@ export interface SilkProps {
 
 const Silk: React.FC<SilkProps> = ({
   speed = 5,
-  scale = 1,
+  scale: _scale = 1,
   color = '#f5f5f5',
   noiseIntensity = 1.5,
   rotation = 0
 }) => {
+  void _scale; // Reserved for future use
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
