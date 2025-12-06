@@ -14,6 +14,7 @@ html {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  max-width: 100vw;
 }
 
 .hero-content-wrapper {
@@ -24,8 +25,8 @@ html {
 }
 
 .card-nav-container {
-  position: absolute;
-  top: 2em;
+  position: fixed;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
