@@ -1,0 +1,146 @@
+/* DASHBOARD SECTION */
+.dashboard-section {
+  width: 100%;
+  padding: 100px 60px;
+  background-color: #10b981;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.dashboard-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  letter-spacing: -1px;
+}
+
+.dashboard-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  background-color: transparent;
+}
+
+.dashboard-card {
+  background-color: #0d9668;
+  padding: 48px 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card:hover {
+  background-color: #059669;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #047857;
+  border: 1px solid #059669;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .dashboard-section {
+    padding: 80px 40px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-section {
+    padding: 60px 16px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .dashboard-subtitle {
+    font-size: 15px;
+  }
+
+  .dashboard-card {
+    padding: 32px 24px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .dashboard-header {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-section {
+    padding: 50px 12px;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-card {
+    padding: 28px 20px;
+  }
+}

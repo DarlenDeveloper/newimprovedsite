@@ -1,0 +1,152 @@
+/* SOLUTIONS SECTION */
+.solutions {
+  width: 100%;
+  padding: 100px 24px;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.solutions-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Solutions List */
+.solutions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.solution-item {
+  padding: 48px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.solution-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.solution-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.solution-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.solution-tag {
+  padding: 4px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+.solution-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000000;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.solution-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0 0 28px 0;
+}
+
+.solution-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.solution-features li {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000000;
+  padding-left: 28px;
+  position: relative;
+  font-weight: 500;
+}
+
+.solution-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .solutions {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions {
+    padding: 60px 16px;
+  }
+
+  .solutions-list {
+    gap: 24px;
+  }
+
+  .solution-item {
+    padding: 28px 20px;
+  }
+
+  .solution-title {
+    font-size: 22px;
+  }
+
+  .solution-description {
+    font-size: 14px;
+  }
+
+  .solution-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions {
+    padding: 50px 12px;
+  }
+
+  .solution-item {
+    padding: 24px 16px;
+  }
+
+  .solution-title {
+    font-size: 20px;
+  }
+
+  .solution-features li {
+    font-size: 14px;
+  }
+}
